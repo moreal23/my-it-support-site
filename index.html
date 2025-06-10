@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Support Consultation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>IT Support Services</h1>
+      <p>Expert help for your tech problems</p>
+    </header>
+
+    <section id="consultation">
+      <h2>Get a Free Consultation</h2>
+      <p>Our team is ready to help you with your IT needs.</p>
+    </section>
+
+    <section id="appointment">
+      <h2>Schedule an Appointment</h2>
+      <form
+        id="appointmentForm"
+        action="https://formspree.io/f/xgvyapej"
+        method="POST"
+      >
+        <input type="text" name="_honey" style="display: none" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="message">Issue Description:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+  </body>
+</html>
