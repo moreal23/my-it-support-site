@@ -2,5 +2,5 @@ name = "my-it-support-site"
 compatibility_date = "2025-06-10"
 
 [site]
-bucket = "./dist"
+bucket = "./dist"  # or "./" if files are in root folder
 entry-point = "workers-site"
