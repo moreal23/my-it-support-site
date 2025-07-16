@@ -1,5 +1,8 @@
 name = "my-it-support-site"
-compatibility_date = "2025-06-10"
+main = "workers-site/index.js"
+type = "javascript"
+
+account_id = "7bb2a28ac72e0115ba6377b8597014f2"
 
 [site]
-bucket = "./"
+bucket = "./public"
