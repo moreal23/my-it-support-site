@@ -1,5 +1,5 @@
 export default {
-  async fetch(request) {
-    return new Response("Hello from Cloudflare Worker!");
+  async fetch(request, env, ctx) {
+    return await getAssetFromKV(request); // or your static asset handler
   },
 };
