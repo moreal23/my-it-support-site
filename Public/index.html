@@ -34,15 +34,25 @@
 
           <h3>SCHEDULE AN APPOINTMENT</h3>
           <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <input type="text" placeholder="Preferred Date" required />
-            <textarea
-              placeholder="Issue Description"
-              rows="4"
-              required
-            ></textarea>
-            <button type="submit">BOOK APPOINTMENT</button>
+            <form action="https://formspree.io/f/mnnzpzva" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <input type="date" name="preferred-date" required />
+              <textarea
+                name="message"
+                placeholder="Issue Description"
+                rows="4"
+                required
+              ></textarea>
+              <input type="text" name="_gotcha" style="display: none" />
+              <!-- spam protection -->
+              <button type="submit">BOOK APPOINTMENT</button>
+            </form>
           </form>
           <p class="privacy-note">
             🔐 Your information is encrypted and never shared. Read our
