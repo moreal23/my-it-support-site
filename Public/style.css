@@ -49,3 +49,34 @@ footer {
   background: #333;
   color: white;
 }
+/* Style for Gooroo IT Company subheading */
+header h3 {
+  font-size: 1.5em;
+  color: #cceeff; /* Light blue to contrast the dark header */
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+#services {
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+#services h2 {
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+#services ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#services li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
