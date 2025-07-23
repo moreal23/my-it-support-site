@@ -3,79 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Support Consultation</title>
-
+    <title>Gooroo IT Support Services</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>IT Support Services</h1>
-      <h3>Gooroo IT company</h3>
-      <p>Expert help for your tech problems</p>
-    </header>
-    <section id="services">
-      <h2>What We Do</h2>
-      <ul>
-        <li>
-          <strong>Network Setup & Security:</strong> Secure and optimize your
-          business or home networks.
-        </li>
-        <li>
-          <strong>IT Support & Troubleshooting:</strong> Fast, reliable help for
-          your hardware and software issues.
-        </li>
-        <li>
-          <strong>Cloud Solutions:</strong> Setup and manage cloud storage,
-          backup, and remote access.
-        </li>
-        <li>
-          <strong>Managed IT Services:</strong> Ongoing monitoring and
-          maintenance for your systems.
-        </li>
-        <li>
-          <strong>Data Recovery & Backup:</strong> Prevent data loss and restore
-          critical files quickly.
-        </li>
-        <li>
-          <strong>Software Installation & Updates:</strong> Install, configure,
-          and update applications securely.
-        </li>
-        <li>
-          <strong>Camera Installation:</strong> Professional setup of security
-          cameras for homes and businesses, including remote access
-          configuration.
-        </li>
-      </ul>
-    </section>
-    <section id="consultation">
-      <h2>Get a Free Consultation</h2>
-      <p>Our team is ready to help you with your IT needs.</p>
-    </section>
+    <div class="container">
+      <header>
+        <h1>IT SUPPORT SERVICES</h1>
+        <h2>GOOROO IT COMPANY</h2>
+        <p class="tagline">Expert help for your tech problems</p>
+      </header>
 
-    <section id="appointment">
-      <h2>Schedule an Appointment</h2>
-      <form
-        id="appointmentForm"
-        action="https://formspree.io/f/xgvyapej"
-        method="POST"
-      >
-        <input type="text" name="_honey" style="display: none" />
-        <input type="hidden" name="_captcha" value="false" />
+      <main>
+        <section class="services">
+          <h3>WHAT WE DO</h3>
+          <ul>
+            <li>Network Setup & Security</li>
+            <li>IT Support & Troubleshooting</li>
+            <li>Cloud Solutions</li>
+            <li>Managed IT Services</li>
+            <li>Data Recovery & Backup</li>
+            <li>Software Installation & Updates</li>
+            <li>Camera Installation</li>
+          </ul>
+        </section>
 
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required />
+        <section class="consultation">
+          <h3>GET A FREE CONSULTATION</h3>
+          <p>Our team is ready to help you with your IT needs.</p>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required />
+          <h3>SCHEDULE AN APPOINTMENT</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Preferred Date" required />
+            <textarea
+              placeholder="Issue Description"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit">BOOK APPOINTMENT</button>
+          </form>
+          <p class="privacy-note">
+            🔐 Your information is encrypted and never shared. Read our
+            <a href="#" target="_blank">Privacy Policy</a>.
+          </p>
+        </section>
+      </main>
 
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date" required />
-
-        <label for="message">Issue Description:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Book Appointment</button>
-      </form>
-    </section>
+      <footer>
+        <p>© 2025 Gooroo IT Company — Innovating Your Digital Future</p>
+      </footer>
+    </div>
   </body>
 </html>

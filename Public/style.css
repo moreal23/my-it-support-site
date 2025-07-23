@@ -1,82 +1,111 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background: #050f1e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  padding: 20px;
+  background: #0d1b30;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00f0ff;
 }
 
 header {
-  background-color: #0077cc;
-  color: white;
-  padding: 20px;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1, header h2 {
+  margin: 5px 0;
+  color: #00f0ff;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
 }
 
 section {
-  padding: 20px;
-  background: white;
-  margin: 20px;
-  border-radius: 8px;
+  flex: 1;
+  min-width: 260px;
 }
 
-form {
+.services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.services li {
+  margin: 8px 0;
+}
+
+.consultation form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-input, textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #0077cc;
-  color: white;
+form input, form textarea {
   padding: 10px;
   border: none;
+  border-radius: 5px;
+  background: #1b2b47;
+  color: #fff;
+}
+
+form button {
+  padding: 12px;
+  background: #00f0ff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #005fa3;
+form button:hover {
+  background: #00c7d7;
 }
 
 footer {
   text-align: center;
-  padding: 15px;
-  background: #333;
-  color: white;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #888;
 }
-/* Style for Gooroo IT Company subheading */
-header h3 {
-  font-size: 1.5em;
-  color: #cceeff; /* Light blue to contrast the dark header */
-  margin-top: -10px;
-  margin-bottom: 10px;
-  font-weight: normal;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-#services {
-  padding: 20px;
-  background-color: #ffffff;
-  margin: 20px;
-  border-radius: 8px;
+.services li {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
-#services h2 {
-  color: #0077cc;
-  margin-bottom: 15px;
+.services li:hover {
+  background: #00f0ff;
+  color: #000;
+}
+.privacy-note {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 10px;
 }
 
-#services ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-#services li {
-  margin-bottom: 10px;
-  line-height: 1.6;
+.privacy-note a {
+  color: #00f0ff;
+  text-decoration: underline;
 }
