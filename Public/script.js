@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function () {
   // Mobile menu toggle
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
@@ -283,3 +284,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+=======
+document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const date = document.getElementById('date').value;
+
+  const confirmation = document.getElementById('confirmation');
+  confirmation.textContent = `Thank you, ${name}. Your appointment for ${date} has been received!`;
+  
+  this.reset(); // Clear the form
+});
+>>>>>>> 80b2e887388b8f6d615bb965d154bdb09b1d64dc

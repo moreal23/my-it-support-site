@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset & Base Styles */
 * {
   margin: 0;
@@ -537,10 +538,118 @@ textarea {
   color: #88c5d4;
   font-size: 0.9rem;
   margin-top: 20px;
+=======
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #050f1e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  padding: 20px;
+  background: #0d1b30;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00f0ff;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1, header h2 {
+  margin: 5px 0;
+  color: #00f0ff;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+section {
+  flex: 1;
+  min-width: 260px;
+}
+
+.services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.services li {
+  margin: 8px 0;
+}
+
+.consultation form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #1b2b47;
+  color: #fff;
+}
+
+form button {
+  padding: 12px;
+  background: #00f0ff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #00c7d7;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #888;
+}
+.services li {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.services li:hover {
+  background: #00f0ff;
+  color: #000;
+}
+.privacy-note {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 10px;
+>>>>>>> 80b2e887388b8f6d615bb965d154bdb09b1d64dc
 }
 
 .privacy-note a {
   color: #00f0ff;
+<<<<<<< HEAD
   text-decoration: none;
 }
 
@@ -862,3 +971,7 @@ textarea {
     font-size: 1rem;
   }
 }
+=======
+  text-decoration: underline;
+}
+>>>>>>> 80b2e887388b8f6d615bb965d154bdb09b1d64dc
